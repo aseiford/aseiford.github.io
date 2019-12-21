@@ -1,0 +1,174 @@
+<html>
+  <head>
+    <title>adam seiford</title>
+    <meta name="description" content="adam seiford's personal website" />
+    <meta charset="utf-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function() {
+        function config() {
+          const button = document.getElementById("lightbulb");
+
+          button.onclick = function() {
+            const body = document.body;
+            body.classList.toggle("dark-mode");
+
+            const links = document.getElementsByTagName("a");
+            [].slice.call(links).forEach(function(elem) {
+              elem.classList.toggle("dark-mode");
+            });
+          };
+        }
+        window.addEventListener("load", config);
+      })();
+    </script>
+  </head>
+
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 0 0.5em 0 0.5em;
+    }
+    p,
+    h1,
+    li {
+      font-family: "Montserrat", sans-serif;
+    }
+    p {
+      margin: 2em 0 2em 0;
+    }
+    h1 {
+      margin: 1.33em 0 1.33em 0;
+      display: inline-flex;
+    }
+
+    .header-row {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    #lightbulb {
+      cursor: pointer;
+      font-size: 2em;
+    }
+
+    .dark-mode {
+      background-color: black;
+      color: white;
+    }
+
+    .text {
+      color: white;
+    }
+
+    .italic {
+      font-style: italic;
+    }
+  </style>
+
+  <body>
+    <div class="header-row">
+      <h1>
+        hi, i'm adam. 😊
+      </h1>
+      <span id="lightbulb">
+        💡
+      </span>
+    </div>
+
+    <div>
+      <p>
+        currently, i am a full stack software engineer working at
+        <a
+          href="https://www.dave.com"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          dave</a
+        >
+        in los angeles.
+        <li>
+          front-end mobile development with react native on dave's core app
+        </li>
+        <li>
+          front-end web development using react on our root website and web app
+        </li>
+        <li>
+          back-end development on node and mysql
+        </li>
+      </p>
+
+      <p>
+        before that, i was a consultant working out of
+        <a
+          href="https://www.capco.com"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          capco</a
+        >'s dallas office.
+        <li>
+          full stack development using react and node on a customer service
+          dashboard
+        </li>
+        <li>
+          full stack development with angular, node, and sql server for an
+          on-prem infrastructure console and an internal project management tool
+        </li>
+        <li>
+          legacy system replacement with a mix of etl and api development,
+          technical analysis, and business analysis
+        </li>
+      </p>
+
+      <p>
+        <span class="italic">before that</span>, i was studying management
+        information systems at
+        <a
+          href="https://www.baylor.edu"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          baylor university</a
+        >
+        in waco, texas.
+        <li>
+          sic 'em bears!
+        </li>
+      </p>
+    </div>
+
+    <span>-----</span>
+
+    <div>
+      <p>
+        <a
+          href="https://www.linkedin.com/in/seiford"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          linkedin
+        </a>
+      </p>
+      <p>
+        <a
+          href="https://www.github.com/aseiford"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          github
+        </a>
+      </p>
+      <p>
+        email: adam at {first_name}{last_name}.com
+      </p>
+    </div>
+  </body>
+</html>

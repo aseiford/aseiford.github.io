@@ -11,17 +11,17 @@
     />
     <!-- what are you doing in here?? 🙃 -->
     <script>
-      (function() {
+      (function () {
         function config() {
           const button = document.getElementById("darkmode-toggle");
           let isDarkMode = false;
 
-          button.onclick = function() {
+          button.onclick = function () {
             const body = document.body;
             body.classList.toggle("dark-mode");
 
             const links = document.getElementsByTagName("a");
-            [].slice.call(links).forEach(function(link) {
+            [].slice.call(links).forEach(function (link) {
               link.classList.toggle("dark-mode");
             });
 
@@ -96,12 +96,8 @@
 
   <body>
     <div class="flex flex-row">
-      <h1>
-        hi, i'm adam. &#x1F60A;
-      </h1>
-      <button id="darkmode-toggle" title="darkmode toggle">
-        🌑
-      </button>
+      <h1>hi, i'm adam. &#x1F60A;</h1>
+      <button id="darkmode-toggle" title="darkmode toggle">🌑</button>
     </div>
 
     <div>
@@ -122,12 +118,10 @@
             front-end mobile development with react native on dave's core app
           </li>
           <li>
-            front-end web development using ejs on our website and react
-            for our web app
+            front-end web development using ejs on our website and react for our
+            web app
           </li>
-          <li>
-            back-end development on node and mysql
-          </li>
+          <li>back-end development on node and mysql</li>
         </ul>
       </div>
       <div>
@@ -171,9 +165,7 @@
           in waco, texas.
         </p>
         <ul>
-          <li>
-            sic 'em bears! &#x1F43B;
-          </li>
+          <li>sic 'em bears! &#x1F43B;</li>
         </ul>
       </div>
     </div>

@@ -1,0 +1,27 @@
+{
+  "name": "aseiford.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve --no-clipboard",
+    "prepare": "husky install",
+    "prettier": "prettier --write ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "husky": "^7.0.4",
+    "prettier": "^2.5.1",
+    "serve": "^13.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aseiford/aseiford.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aseiford/aseiford.github.io/issues"
+  },
+  "homepage": "https://github.com/aseiford/aseiford.github.io#readme"
+}

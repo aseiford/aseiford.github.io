@@ -2,193 +2,149 @@
 <html>
   <head>
     <title>adam seiford</title>
-    <meta name="description" content="adam seiford's personal website" />
-    <meta name="og:description" content="adam seiford's personal website" />
-    <meta charset="utf-8" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans"
-      rel="stylesheet"
+    <meta name="description" content="adam seiford personal website" />
+    <meta name="og:description" content="adam seiford personal website" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
     />
-    <!-- what are you doing in here?? 🙃 -->
-    <script>
-      (function () {
-        function config() {
-          const button = document.getElementById("darkmode-toggle");
-          let isDarkMode = false;
+    <meta charset="utf-8" />
 
-          button.onclick = function () {
-            const body = document.body;
-            body.classList.toggle("dark-mode");
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
 
-            const links = document.getElementsByTagName("a");
-            [].slice.call(links).forEach(function (link) {
-              link.classList.toggle("dark-mode");
-            });
+    <link rel="stylesheet" href="css/98.css" />
+    <link rel="stylesheet" href="css/helpers.css" />
+    <link rel="stylesheet" href="css/main.css" />
 
-            isDarkMode = !isDarkMode;
-            button.innerHTML = isDarkMode ? "☀️" : "🌑";
-          };
-        }
-        window.addEventListener("load", config);
-      })();
-    </script>
-
-    <style>
-      body {
-        color: #2b2b2b;
-        margin: 0 1.5em 0 1em;
-      }
-      h1 {
-        font-family: "Montserrat", sans-serif;
-      }
-      p,
-      span,
-      li {
-        font-family: "Open Sans";
-        list-style-type: none;
-      }
-      p {
-        margin: 2em 0 1.5em 0;
-      }
-      li {
-        margin: 0.6em 0 0.6em 0;
-      }
-      a {
-        background-color: white;
-        color: #2b2b2b;
-      }
-
-      #darkmode-toggle {
-        background-color: transparent;
-        border: none;
-        color: none;
-        cursor: pointer;
-        font-size: 2em;
-      }
-
-      .dark-mode {
-        background-color: #2b2b2b;
-        color: white;
-      }
-
-      .flex {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin: 1em 0 1em 0;
-      }
-
-      .flex-column {
-        align-items: baseline;
-        flex-direction: column;
-      }
-
-      .flex-row {
-        align-items: center;
-        flex-direction: row;
-      }
-
-      .italic {
-        font-style: italic;
-      }
-    </style>
+    <script src="js/main.js"></script>
   </head>
 
   <body>
-    <div class="flex flex-row">
-      <h1>hi, i'm adam. &#x1F60A;</h1>
-      <button id="darkmode-toggle" title="darkmode toggle">🌑</button>
-    </div>
-
-    <div>
-      <div>
-        <p>
-          currently, i am a full stack software engineer working at
-          <a
-            href="https://www.dave.com"
-            rel="noreferrer noopener"
-            target="_blank"
-          >
-            dave</a
-          >
-          in los angeles.
-        </p>
-        <ul>
-          <li>
-            front-end mobile development with react native on dave's core app
-          </li>
-          <li>
-            front-end web development using ejs on our website and react for our
-            web app
-          </li>
-          <li>back-end development on node and mysql</li>
-        </ul>
+    <div class="desktop h-100" onmouseup="onDeselect()">
+      <div class="main-desktop d-flex h-100">
+        <div
+          id="desktop-icon"
+          class="desktop-icon d-flex not-selectable"
+          onclick="onSingleClick()"
+          ondblclick="onOpen()"
+        >
+          <h2>&#x1F4D8;</h2>
+          <h5>adam's short bio</h5>
+        </div>
+        <div id="bio" class="window bio-window">
+          <div class="title-bar">
+            <div class="title-bar-text not-selectable">
+              &#x1F4D8; adam's short bio
+            </div>
+            <div class="title-bar-controls">
+              <button aria-label="Minimize" onclick="toggleMinimize()"></button>
+              <button aria-label="Close" onclick="onClose()"></button>
+            </div>
+          </div>
+          <section class="field-row" style="justify-content: flex-start">
+            <div>
+              <button
+                class="menu-bar"
+                onclick="onPressExternalLink('linkedin')"
+              >
+                linkedin
+              </button>
+            </div>
+            <div>
+              <button class="menu-bar" onclick="onPressExternalLink('github')">
+                github
+              </button>
+            </div>
+          </section>
+          <div class="window-body">
+            <div class="about-me h-100 not-selectable">
+              <div>hi, i'm adam! &#x1F60A;</div>
+              <div>
+                <p>
+                  currently, i am a senior software engineer working remotely at
+                  <a
+                    href="https://www.dave.com"
+                    rel="noreferrer noopener"
+                    target="_blank"
+                  >
+                    dave</a
+                  >.
+                </p>
+                <ul>
+                  <li>
+                    front-end mobile development with react native on dave's
+                    core app
+                  </li>
+                  <li>front-end web development in react</li>
+                  <li>back-end development using node and mysql</li>
+                </ul>
+              </div>
+              <div>
+                <p>
+                  before that, i was a consultant working out of
+                  <a
+                    href="https://www.capco.com"
+                    rel="noreferrer noopener"
+                    target="_blank"
+                  >
+                    capco</a
+                  >'s dallas office.
+                </p>
+                <ul>
+                  <li>
+                    full stack development using react and node on a customer
+                    service application
+                  </li>
+                  <li>
+                    full stack development with angular, node, and sql server
+                    for an on-prem infrastructure console and an internal
+                    project management tool
+                  </li>
+                  <li>
+                    legacy enterprise system replacement with a mix of etl and
+                    api development, technical analysis, and requirement
+                    gathering
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p>
+                  <span class="italic">before that</span>, i was studying
+                  management information systems at
+                  <a
+                    href="https://www.baylor.edu"
+                    rel="noreferrer noopener"
+                    target="_blank"
+                  >
+                    baylor university</a
+                  >
+                  in waco, texas.
+                </p>
+                <ul>
+                  <li>sic 'em bears! &#x1F43B;</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="status-bar not-selectable">
+            <p class="status-bar-field">For Help, press Alt + F4</p>
+            <p class="status-bar-field">Page 1</p>
+            <p class="status-bar-field">Word count: 115</p>
+          </div>
+        </div>
       </div>
-      <div>
-        <p>
-          before that, i was a consultant working out of
-          <a
-            href="https://www.capco.com"
-            rel="noreferrer noopener"
-            target="_blank"
+      <div class="taskbar d-flex w-100">
+        <div class="taskbar-button">
+          <button
+            id="taskbar-window-button"
+            class="active"
+            onclick="toggleMinimize()"
           >
-            capco</a
-          >'s dallas office.
-        </p>
-        <ul>
-          <li>
-            full stack development using react and node on a customer service
-            dashboard
-          </li>
-          <li>
-            full stack development with angular, node, and sql server for an
-            on-prem infrastructure console and an internal project management
-            tool
-          </li>
-          <li>
-            legacy enterprise system replacement with a mix of etl and api
-            development, technical analysis, and requirement gathering
-          </li>
-        </ul>
+            <span class="title">&#x1F4D8; adam's short bio</span>
+          </button>
+        </div>
+        <div id="clock" class="time not-selectable d-flex">12:00 AM</div>
       </div>
-      <div>
-        <p>
-          <span class="italic">before that</span>, i was studying management
-          information systems at
-          <a
-            href="https://www.baylor.edu"
-            rel="noreferrer noopener"
-            target="_blank"
-          >
-            baylor university</a
-          >
-          in waco, texas.
-        </p>
-        <ul>
-          <li>sic 'em bears! &#x1F43B;</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="flex flex-column">
-      <span>
-        <a
-          href="https://www.linkedin.com/in/seiford"
-          rel="noreferrer noopener"
-          target="_blank"
-        >
-          linkedin</a
-        >
-      </span>
-      <span>
-        <a
-          href="https://www.github.com/aseiford"
-          rel="noreferrer noopener"
-          target="_blank"
-        >
-          github</a
-        >
-      </span>
     </div>
   </body>
 </html>

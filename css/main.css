@@ -1,0 +1,123 @@
+.main-desktop {
+  align-items: center;
+  background-color: var(--teal);
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.desktop-icon {
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  margin-top: 16px;
+  margin-left: 16px;
+  position: absolute;
+  top: 0;
+}
+
+.blue-overlay {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.bio-window {
+  left: 0;
+  margin: 0 16px;
+  position: relative;
+  top: 0;
+}
+
+.menu {
+  -webkit-font-smoothing: none;
+  font-family: "Pixelated MS Sans Serif", Arial, serif;
+  font-size: 11px;
+}
+
+button.menu-bar {
+  color: var(--black);
+  box-shadow: none;
+  min-width: 0;
+  padding: 0 6px;
+}
+
+button.menu-bar::first-letter {
+  text-decoration: underline;
+}
+
+.menu .separator {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.about-me {
+  background-color: var(--white);
+  border: 1px solid var(--dark-grey);
+  border-bottom-color: var(--white);
+  border-right-color: var(--white);
+  font-size: 14px;
+  padding: 4px;
+}
+
+.taskbar {
+  background-color: var(--light-grey);
+  border-color: #dfdfdf;
+  border-top: 1px solid;
+  bottom: 0;
+  box-shadow: inset 0 1px 0 0 var(--white);
+  flex-direction: row;
+  left: 0;
+  padding: 4px 0;
+  position: absolute;
+}
+
+.taskbar button {
+  cursor: pointer;
+  margin-left: 4px;
+  position: relative;
+  outline: none;
+  text-align: left;
+  width: 130px;
+}
+
+.taskbar button:not(:disabled):active {
+  padding: 0 12px;
+}
+
+.taskbar button.active {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAIAAAD91JpzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAF0WlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOCAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDIwLTEyLTA4VDE1OjMyOjA5KzExOjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDIwLTEyLTA4VDE1OjMyOjA5KzExOjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAyMC0xMi0wOFQxNTozMjowOSsxMTowMCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDplNjVhYWI3Yi0zMGJiLWNiNDUtYmY0OS1mNzFjNjBkMjJmZGMiIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDo5ZDZjZjFiNi03NzJiLTA1NDMtYTM5Yy03Y2EzYjJmM2UzNzYiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoxMTRjMjg1OC0yYjc3LTM2NGUtYmIzZC0zODY1ODg5NmU0NmIiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIj4gPHhtcE1NOkhpc3Rvcnk+IDxyZGY6U2VxPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY3JlYXRlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDoxMTRjMjg1OC0yYjc3LTM2NGUtYmIzZC0zODY1ODg5NmU0NmIiIHN0RXZ0OndoZW49IjIwMjAtMTItMDhUMTU6MzI6MDkrMTE6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE4IChXaW5kb3dzKSIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6ZTY1YWFiN2ItMzBiYi1jYjQ1LWJmNDktZjcxYzYwZDIyZmRjIiBzdEV2dDp3aGVuPSIyMDIwLTEyLTA4VDE1OjMyOjA5KzExOjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOCAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+tcRUTQAAABRJREFUCB1jOHDgwP///xmAGMgCAElkCnv8jfX4AAAAAElFTkSuQmCC);
+  box-shadow: inset -1px 0 0 0 #dfdfdf, inset -1px 1px 0 0 grey,
+    inset -1px -1px 0 0 #dfdfdf, inset 0 0 0 1px grey;
+  border-bottom-color: var(--white);
+  border-left-color: var(--black);
+  border-right-color: var(--white);
+  border-top-color: var(--black);
+  font-weight: 700;
+}
+
+.taskbar button .title {
+  color: var(--black);
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.taskbar-button {
+  flex: 1 1 auto;
+}
+
+.time {
+  align-items: center;
+  border: 1px solid var(--dark-grey);
+  border-right-color: var(--white);
+  border-bottom-color: var(--white);
+  flex: 0 0 60px;
+  font-family: "Pixelated MS Sans Serif", Arial, serif;
+  font-size: 11px;
+  justify-content: center;
+  margin-right: 2px;
+  padding: 4px 0;
+  text-align: center;
+}

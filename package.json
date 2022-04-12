@@ -4,15 +4,17 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "start": "serve --no-clipboard",
     "prepare": "husky install",
-    "prettier": "prettier --write ."
+    "prettier": "prettier --write .",
+    "start": "serve --no-clipboard",
+    "update-98": "cp -r node_modules/98.css/dist/98.css node_modules/98.css/dist/ms_sans_serif.woff node_modules/98.css/dist/ms_sans_serif.woff2 node_modules/98.css/dist/ms_sans_serif_bold.woff node_modules/98.css/dist/ms_sans_serif_bold.woff2 css && prettier --loglevel silent --write css"
   },
   "dependencies": {},
   "devDependencies": {
-    "husky": "^7.0.4",
-    "prettier": "^2.5.1",
-    "serve": "^13.0.2"
+    "98.css": "0.1.17",
+    "husky": "7.0.4",
+    "prettier": "2.5.1",
+    "serve": "13.0.2"
   },
   "repository": {
     "type": "git",

@@ -29,10 +29,8 @@
   top: 0;
 }
 
-.menu {
-  -webkit-font-smoothing: none;
-  font-family: "Pixelated MS Sans Serif", Arial, serif;
-  font-size: 11px;
+.links {
+  justify-content: flex-start;
 }
 
 button.menu-bar {
@@ -46,11 +44,6 @@ button.menu-bar::first-letter {
   text-decoration: underline;
 }
 
-.menu .separator {
-  margin-top: 3px;
-  margin-bottom: 3px;
-}
-
 .about-me {
   background-color: var(--white);
   border: 1px solid var(--dark-grey);
@@ -58,6 +51,22 @@ button.menu-bar::first-letter {
   border-right-color: var(--white);
   font-size: 14px;
   padding: 4px;
+}
+
+@media screen and (max-height: 500px), screen and (max-width: 374px) {
+  .about-me {
+    max-height: 200px;
+    overflow: scroll;
+  }
+  .taskbar {
+    bottom: 0;
+  }
+}
+
+@media screen and (max-height: 350px), screen and (max-width: 350px) {
+  .small-screen-hidden {
+    display: none;
+  }
 }
 
 .taskbar {

@@ -76,5 +76,5 @@ window.addEventListener("load", () => {
   updateClock(); // sets clock value on first load
   setInterval(function () {
     updateClock();
-  }, 1000);
+  }, 5000);
 });

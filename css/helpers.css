@@ -10,19 +10,10 @@ body,
 html {
   height: 100%;
   margin: 0;
-  /*min-width: 275px;*/
-  /*min-height: 450px;*/
   padding: 0;
   width: 100%;
 }
 
-/*@media (min-height: 475px) and (min-width: 400px) {*/
-/*  body,*/
-/*  html {*/
-/*    min-width: 275px;*/
-/*    min-height: 450px;*/
-/*  }*/
-/*}*/
 h1,
 h2,
 h3,

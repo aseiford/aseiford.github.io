@@ -53,19 +53,13 @@ button.menu-bar::first-letter {
   padding: 4px;
 }
 
-@media screen and (max-height: 500px), screen and (max-width: 374px) {
+@media screen and (max-height: 600px), screen and (max-width: 400px) {
   .about-me {
     max-height: 200px;
     overflow: scroll;
   }
   .taskbar {
     bottom: 0;
-  }
-}
-
-@media screen and (max-height: 350px), screen and (max-width: 350px) {
-  .small-screen-hidden {
-    display: none;
   }
 }
 
